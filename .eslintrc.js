@@ -13,6 +13,14 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/ban-ts-comment': 0,
   },
+  overrides: [
+    {
+      files: ['pages/api/**/*.ts'],
+      rules: {
+        'import/no-anonymous-default-export': 0,
+      },
+    },
+  ],
   settings: {
     'import/resolver': {
       'babel-module': {},

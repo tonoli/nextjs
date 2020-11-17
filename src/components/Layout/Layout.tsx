@@ -1,8 +1,8 @@
-import React from "react";
-import Head from "next/head";
-import Footer from "@components/Layout/Footer/Footer";
+import React from 'react';
+import Head from 'next/head';
+import Footer from '@components/Layout/Footer/Footer';
 
-import styles from "./Layout.module.css";
+import styles from './Layout.module.css';
 
 const Layout: React.FC = ({ children }) => {
   return (
@@ -12,13 +12,11 @@ const Layout: React.FC = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        {children}
-      </main>
+      <main className={styles.main}>{children}</main>
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default Layout;
