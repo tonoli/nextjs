@@ -28,7 +28,7 @@
   "exclude": [
     "node_modules",
     ".editorconfig",
-    ".env.dist",
+    ".env.local.dist",
     ".env.local"
   ],
   "include": [
