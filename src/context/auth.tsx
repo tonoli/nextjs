@@ -3,7 +3,7 @@ import firebase from 'firebase/app';
 import { initializeFirebase } from '@services/firebase/client';
 
 initializeFirebase();
-export interface Auth {
+export interface AuthContext {
   uid: string;
 }
 
@@ -11,7 +11,7 @@ const initialValue = {
   uid: null,
 };
 
-export const authContext = createContext<Auth>(initialValue);
+export const authContext = createContext<AuthContext>(initialValue);
 
 export const AuthProvider: React.FC = ({ children }) => {
   const auth = useAuthProvider();
@@ -19,7 +19,7 @@ export const AuthProvider: React.FC = ({ children }) => {
   return <authContext.Provider value={auth}>{children}</authContext.Provider>;
 };
 
-export const useAuthProvider = (): Auth => {
+export const useAuthProvider = (): AuthContext => {
   const [uid, setUid] = useState<string>(null);
 
   useEffect(() => {
