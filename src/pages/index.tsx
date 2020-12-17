@@ -1,8 +1,8 @@
 import React from 'react';
 import { NextPage } from 'next';
-import Layout from '@components/Layout/Layout';
+import Layout from '@src/components/Layout/Layout';
 
-import styles from '@styles/Home.module.css';
+import styles from '@src/styles/Home.module.css';
 
 const HomePage: NextPage = () => {
   return (

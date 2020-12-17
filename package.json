@@ -1,11 +1,23 @@
 {
   "name": "next.js",
-  "version": "0.1.0",
+  "description": "Next.js boilerplate",
+  "version": "1.0.0",
   "license": "MIT",
+  "author": {
+    "email": "mail@octanium.fr",
+    "name": "Benjamin Lepas",
+    "url": "https://octanium.fr"
+  },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "NODE_ENV=development next dev",
+    "build": "NODE_ENV=production next build",
+    "export": "NODE_ENV=production yarn build && next export",
+    "start": "NODE_ENV=production next start",
+    "test": "NODE_ENV=test jest",
+    "test:watch": "NODE_ENV=test jest --watch",
+    "test:coverage": "NODE_ENV=test jest --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "next": "10.0.1",
