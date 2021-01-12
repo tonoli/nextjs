@@ -1,53 +1,58 @@
 import React from 'react';
 import { NextPage } from 'next';
-import Layout from '@src/components/Layout/Layout';
-
-import styles from '@src/styles/Home.module.css';
+import Layout from '@components/Layout/Layout';
+import Card from '@components/Card';
 
 const HomePage: NextPage = () => {
   return (
     <Layout>
-      <h1 className={styles.title}>
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
+      <h1 className="text-base font-bold text-6xl text-center">
+        Welcome to{' '}
+        <a href="https://nextjs.org" className="text-blue-600 hover:underline">
+          Next.js!
+        </a>
       </h1>
 
-      <p className={styles.description}>
-        Get started by editing{' '}
-        <code className={styles.code}>pages/index.tsx</code>
+      <p className="text-base text-black text-xl my-5 text-center">
+        Get started by editing <code>pages/index.tsx</code>
       </p>
 
-      <div className={styles.grid}>
-        <a href="https://nextjs.org/docs" className={styles.card}>
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <div className="mt-12 grid grid-cols-1 gap-4 gap-x-6 max-w-3xl sm:grid-cols-2">
+        <Card
+          link={'https://nextjs.org/docs'}
+          title={'Documentation'}
+          desc={'Find in-depth information about Next.js features and API.'}
+        />
 
-        <a href="https://nextjs.org/learn" className={styles.card}>
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
+        <Card
+          link={'https://nextjs.org/learn'}
+          title={'Learn'}
+          desc={'Learn about Next.js in an interactive course with quizzes!'}
+        />
 
-        <a
-          href="https://github.com/vercel/next.js/tree/master/examples"
-          className={styles.card}>
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
+        <Card
+          link={'https://github.com/vercel/next.js/tree/master/examples'}
+          title={'Examples'}
+          desc={'Discover and deploy boilerplate example Next.js projects.'}
+        />
 
-        <a
-          href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className={styles.card}>
-          <h3>Deploy &rarr;</h3>
-          <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-        </a>
+        <Card
+          link={
+            'https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
+          }
+          title={'Deploy'}
+          desc={
+            'Instantly deploy your Next.js site to a public URL with Vercel.'
+          }
+        />
       </div>
-
-      <button
-        onClick={() => {
-          alert('With typescript and Jest');
-        }}>
-        Test Button
-      </button>
+      <style jsx>{`
+        code {
+          @apply rounded p-3 text-lg;
+          background-color: #fafafa;
+          line-height: 1.75rem;
+        }
+      `}</style>
     </Layout>
   );
 };

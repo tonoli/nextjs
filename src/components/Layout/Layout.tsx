@@ -2,17 +2,17 @@ import React from 'react';
 import Head from 'next/head';
 import Footer from '@src/components/Layout/Footer/Footer';
 
-import styles from './Layout.module.css';
-
 const Layout: React.FC = ({ children }) => {
   return (
-    <div className={styles.container}>
+    <div className="h-auto px-2 flex-col justify-center items-center">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>{children}</main>
+      <main className="flex flex-1 flex-col p-4 py-20 justify-center items-center">
+        {children}
+      </main>
 
       <Footer />
     </div>
