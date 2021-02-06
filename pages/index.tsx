@@ -45,6 +45,12 @@ const HomePage: NextPage = () => {
             'Instantly deploy your Next.js site to a public URL with Vercel.'
           }
         />
+        <button
+          onClick={() => {
+            alert('With typescript and Jest');
+          }}>
+          Test Button
+        </button>
       </div>
       <style jsx>{`
         code {
