@@ -3,39 +3,42 @@
 exports[`Home page matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="container"
+    class="h-auto px-2 flex-col justify-center items-center"
   >
     <main
-      class="main"
+      class="flex flex-1 flex-col p-4 py-20 justify-center items-center"
     >
       <h1
-        class="title"
+        class="jsx-932824566 text-base font-bold text-6xl text-center"
       >
         Welcome to 
         <a
+          class="jsx-932824566 text-blue-600 hover:underline"
           href="https://nextjs.org"
         >
           Next.js!
         </a>
       </h1>
       <p
-        class="description"
+        class="jsx-932824566 text-base text-black text-xl my-5 text-center"
       >
         Get started by editing 
         <code
-          class="code"
+          class="jsx-932824566"
         >
           pages/index.tsx
         </code>
       </p>
       <div
-        class="grid"
+        class="jsx-932824566 mt-12 grid grid-cols-1 gap-4 gap-x-6 max-w-3xl sm:grid-cols-2"
       >
         <a
-          class="card"
+          class="bg-gray-50 transition-colors rounded-xl overflow-hidden p-6 space-3 text-left border border-gray-50 group hover:border-blue-600 hover:text-blue-600"
           href="https://nextjs.org/docs"
         >
-          <h3>
+          <h3
+            class="text-2xl font-bold transition-colors group-hover:text-blue-600"
+          >
             Documentation →
           </h3>
           <p>
@@ -43,10 +46,12 @@ exports[`Home page matches snapshot 1`] = `
           </p>
         </a>
         <a
-          class="card"
+          class="bg-gray-50 transition-colors rounded-xl overflow-hidden p-6 space-3 text-left border border-gray-50 group hover:border-blue-600 hover:text-blue-600"
           href="https://nextjs.org/learn"
         >
-          <h3>
+          <h3
+            class="text-2xl font-bold transition-colors group-hover:text-blue-600"
+          >
             Learn →
           </h3>
           <p>
@@ -54,10 +59,12 @@ exports[`Home page matches snapshot 1`] = `
           </p>
         </a>
         <a
-          class="card"
+          class="bg-gray-50 transition-colors rounded-xl overflow-hidden p-6 space-3 text-left border border-gray-50 group hover:border-blue-600 hover:text-blue-600"
           href="https://github.com/vercel/next.js/tree/master/examples"
         >
-          <h3>
+          <h3
+            class="text-2xl font-bold transition-colors group-hover:text-blue-600"
+          >
             Examples →
           </h3>
           <p>
@@ -65,10 +72,12 @@ exports[`Home page matches snapshot 1`] = `
           </p>
         </a>
         <a
-          class="card"
+          class="bg-gray-50 transition-colors rounded-xl overflow-hidden p-6 space-3 text-left border border-gray-50 group hover:border-blue-600 hover:text-blue-600"
           href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
         >
-          <h3>
+          <h3
+            class="text-2xl font-bold transition-colors group-hover:text-blue-600"
+          >
             Deploy →
           </h3>
           <p>
@@ -76,14 +85,12 @@ exports[`Home page matches snapshot 1`] = `
           </p>
         </a>
       </div>
-      <button>
-        Test Button
-      </button>
     </main>
     <footer
-      class="footer"
+      class="border-t border-gray-50 flex justify-center items-center"
     >
       <a
+        class="flex justify-center items-center"
         href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
         rel="noopener noreferrer"
         target="_blank"
@@ -91,7 +98,7 @@ exports[`Home page matches snapshot 1`] = `
         Powered by 
         <img
           alt="Vercel Logo"
-          class="logo"
+          class="h-4 ml-2"
           src="/vercel.svg"
         />
       </a>

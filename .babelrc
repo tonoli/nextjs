@@ -1,15 +1,6 @@
 {
   "presets": [
-    [
-      "next/babel",
-      {
-        "styled-jsx": {
-          "plugins": [
-            "styled-jsx-plugin-postcss"
-          ]
-        }
-      }
-    ]
+    ["next/babel"]
   ],
   "plugins": [
     [
@@ -22,7 +13,8 @@
           ".js", ".ts", ".jsx", ".tsx", "d.ts"
         ],
         "alias": {
-          "@src": "./src"
+          "@src": "./src",
+          "@components": "./src/components"
         }
       }
     ]
