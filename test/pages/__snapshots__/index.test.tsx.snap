@@ -84,6 +84,11 @@ exports[`Home page matches snapshot 1`] = `
             Instantly deploy your Next.js site to a public URL with Vercel.
           </p>
         </a>
+        <button
+          class="jsx-932824566"
+        >
+          Test Button
+        </button>
       </div>
     </main>
     <footer
