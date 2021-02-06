@@ -1,8 +1,8 @@
 import React from 'react';
 import { NextPage } from 'next';
-import Layout from '@components/Layout/Layout';
+import Layout from '@src/components/Layout/Layout';
 
-import styles from '@styles/Home.module.css';
+import styles from '@src/styles/Home.module.css';
 
 const HomePage: NextPage = () => {
   return (
@@ -41,6 +41,13 @@ const HomePage: NextPage = () => {
           <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
         </a>
       </div>
+
+      <button
+        onClick={() => {
+          alert('With typescript and Jest');
+        }}>
+        Test Button
+      </button>
     </Layout>
   );
 };

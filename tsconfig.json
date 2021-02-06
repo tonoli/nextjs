@@ -22,12 +22,7 @@
     "jsx": "preserve",
     "baseUrl": "./",
     "paths": {
-      "@pages/*": [
-        "pages/*"
-      ],
-      "@*": [
-        "src/*"
-      ]
+      "@src/*": ["./src/*"]
     }
   },
   "exclude": [
