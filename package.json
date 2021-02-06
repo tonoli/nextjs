@@ -17,8 +17,8 @@
     "test:watch": "NODE_ENV=test jest --watch",
     "test:coverage": "NODE_ENV=test jest --coverage",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-    "generate": "yarn plop --plopfile ./generators/plopfile.js",
+    "lint:fix": "eslint . --fix",
+    "generate": "yarn plop --plopfile ./generators/plopfile.js"
   },
   "dependencies": {
     "autoprefixer": "^10.1.0",
