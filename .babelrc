@@ -3,6 +3,7 @@
     ["next/babel"]
   ],
   "plugins": [
+    "inline-react-svg",
     [
       "module-resolver",
       {
@@ -15,6 +16,13 @@
         "alias": {
           "@src": "./src",
           "@components": "./src/components"
+        },
+        "compilerOptions": {
+          "baseUrl": ".",
+          "paths": {
+            "@src": ["./src"],
+            "@components/*": ["./src/components/*"]
+          }
         }
       }
     ]
